@@ -1,9 +1,27 @@
 from model.creature import Creature
 
 _creatures = [
-    Creature(name = "John Doe", country = "United States", area = "Software Engineering", description = "John Doe is a software engineer"),
-    Creature(name = "Jane Doe", country = "United States", area = "Software Engineering", description = "Jane Doe is a software engineer"),
-    Creature(name = "Jim Doe", country = "United States", area = "Software Engineering", description = "Jim Doe is a software engineer"),
+    Creature(
+        name = "John Doe",
+        country = "United States",
+        area = "Software Engineering",
+        description = "John Doe is a software engineer",
+        aka = "John",
+    ),
+    Creature(
+        name = "Jane Doe",
+        country = "United States",
+        area = "Software Engineering",
+        description = "Jane Doe is a software engineer",
+        aka = "Jane",
+    ),
+    Creature(
+        name = "Jim Doe",
+        country = "United States",
+        area = "Software Engineering",
+        description = "Jim Doe is a software engineer",
+        aka = "Jim",
+    ),
 ]
 
 def get_all_creatures() -> list[Creature] | None:
