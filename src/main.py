@@ -1,5 +1,7 @@
 from fastapi import FastAPI
 from web import explorer, creature
+import uvicorn
+
 app = FastAPI()
 
 app.include_router(explorer.router)
